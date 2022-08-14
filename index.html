@@ -9,18 +9,69 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+        @media only screen and (max-width: 600px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .article {
+                display: block;
+                width: 50% !important;
+                margin: 0 auto;
+                padding: 0 0 0 0 !important;
+                margin: 0 auto 50px auto !important;
+            }
+            .article-last {
+                display: block;
+                width: 50% !important;
+                margin: 0 auto;
+                padding: 0 0 0 0 !important;
+                margin: 0 auto !important;
+            }
+
+            .gallery-img {
+                display: block;
+                width: 70%;
+                padding:0 0 20px 0 !important;
+                margin: 0 auto;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .article {
+                width: 60% !important;
+                min-width: 180px ; 
+            }
+            .article-last {
+                width: 60% !important;
+                min-width: 180px;
+            }
+            .offer-img {
+                display: block;
+                width: 100%; 
+                padding: 30px 0;
+            }
+
+            .offer-text {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        
+
     </style>
 
 </head>
 
-<body>
+<body style="margin: 0; padding: 0;">
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
         <tbody>
             <tr>
                 <td>
                     <!-- start of main content -->
-                    <table class="main-container" width="600px" border="0" cellspacing="0" cellpadding="0" bgcolor="#fff" style="border-radius: 5px; margin: 0 auto; box-shadow: 0 0 10px rgba(0, 0, 0, .2); background-color: #ffffff;">
+                    <table class="main-container" width="600px" border="0" cellspacing="0" cellpadding="0" bgcolor="#fff" style="margin: 0 auto; box-shadow: 0 0 10px rgba(0, 0, 0, .45); background-color: #ffffff; max-width: 600px;" align="center">
                         <tr>
                             <td>
                     
@@ -28,7 +79,7 @@
                                 <tr>
                                     <td>
                                         <!-- header -->
-                                        <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-image: url('images/header_img_new_clean_gradient.png'); background-repeat: no-repeat; background-position: center top; max-height: 596px; height: 530px; background-size: cover;">
+                                        <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-image: url('images/header_img_new_clean_gradient.png'); background-repeat: no-repeat; background-position: center top; background-size: cover; max-height: 596px; height: 530px; background-size: cover;">
 
                                             <!-- header image & text -->
                                             <tr style="height: 50%;">
@@ -357,7 +408,7 @@
                                                         <!-- s4 articles -->
                                                         <tr>
                                                             <!--  s4 article 1 -->
-                                                            <td style="width: 33.333333%; padding: 0 30px 0 0;">
+                                                            <td class="article" style="width: 33.333333%; padding: 0 30px 0 0;">
                                                                 <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff;">
                                                                     <!-- s4 article 1 img -->
                                                                     <tr>
@@ -391,7 +442,7 @@
                                                                 
                                                             </td>
                                                             <!-- s4 article 2 -->
-                                                            <td style="width: 33.333333%; padding: 0 15px 0 15px;">
+                                                            <td class="article" style="width: 33.333333%; padding: 0 15px 0 15px;">
                                                                 <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff;">
                                                                     <!-- s4 article 2 img -->
                                                                     <tr>
@@ -425,7 +476,7 @@
                                                                 
                                                             </td>
                                                             <!-- s4 article 3 -->
-                                                            <td style="width: 33.333333%; padding: 0 0 0 30px;">
+                                                            <td class="article article-last" style="width: 33.333333%; padding: 0 0 0 30px;">
                                                                 <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff;">
                                                                     <!-- s4 article 3 img -->
                                                                     <tr>
@@ -490,7 +541,7 @@
                                         <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; margin-top: -2px; background-image: url('images/middle_bg.png');background-position: center top; background-repeat: no-repeat; background-size: cover; padding: 0 20px;" >
                                             <tr>
                                                 <!-- s5 offer image -->
-                                                <td width="45%">
+                                                <td class="offer-img" width="45%">
                                                     <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="" >
                                                         <tr>
                                                             <td align="center" valign="middle">
@@ -500,7 +551,7 @@
                                                     </table> 
                                                 </td>
                                                 <!-- s5 offer txt -->
-                                                <td width="55%">
+                                                <td class="offer-text" width="55%">
                                                     <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif;" >
                                                         <tr>
                                                             <td>
@@ -589,19 +640,19 @@
                                             </tr>
                                             <!-- s6 gallery -->
                                             <tr>
-                                                <td>
-                                                    <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-color:#A76F4F; padding: 0 20px 10px 20px;">
+                                                <td style="margin-top: -2px;">
+                                                    <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-color:#A76F4F; padding: 2px 20px 10px 20px; margin-top: -2px;">
                                                         <tr>
-                                                            <td style="padding-bottom: 20px;">
+                                                            <td class="gallery-row-1" style="padding-bottom: 20px;background-color:#A76F4F;">
                                                                 <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-color:#A76F4F;">
                                                                 <tr>
-                                                                    <td width="33.333333%" class="img-l" style="padding:0 16px 0 0">
+                                                                    <td class="gallery-img" width="33.333333%" class="img-l" style="padding:0 16px 0 0">
                                                                         <img src="images/traditional-eggnog-cocktail-whipped-cream.jpeg" alt="" width="100%">
                                                                     </td>
-                                                                    <td width="33.333333%" class="img-m" style="padding:0 8px 0 8px">
+                                                                    <td class="gallery-img" width="33.333333%" class="img-m" style="padding:0 8px 0 8px">
                                                                         <img src="images/delicious-eggnog-cocktail-gift-boxes.jpeg" alt="" width="100%">
                                                                     </td>
-                                                                    <td width="33.333333%" class="img-r" style="padding:0 0 0 16px">
+                                                                    <td class="gallery-img" width="33.333333%" class="img-r" style="padding:0 0 0 16px">
                                                                         <img src="images/woman-enjoying-eggnog.jpeg" alt="" width="100%">
                                                                     </td>
                                                                 </tr>
@@ -613,13 +664,13 @@
                                                             <td>
                                                                 <table class="top-nav" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Poppins', sans-serif; background-color:#A76F4F;">
                                                                     <tr>
-                                                                        <td width="33.333333%" class="img-l" style="padding:0 16px 0 0">
+                                                                        <td class="gallery-img" width="33.333333%" class="img-l" style="padding:0 16px 0 0">
                                                                             <img src="images/eggnog_decorations.jpg" alt="" width="100%">
                                                                         </td>
-                                                                        <td width="33.333333%" class="img-m" style="padding:0 8px 0 8px">
+                                                                        <td class="gallery-img" width="33.333333%" class="img-m" style="padding:0 8px 0 8px">
                                                                             <img src="images/gallery_1.png" alt="" width="100%">
                                                                         </td>
-                                                                        <td width="33.333333%" class="img-r" style="padding:0 0 0 16px">
+                                                                        <td class="gallery-img" width="33.333333%" class="img-r" style="padding:0 0 0 16px">
                                                                             <img src="images/glass_eggnog.jpg" alt="" width="100%">
                                                                         </td>
                                                                     </tr>
